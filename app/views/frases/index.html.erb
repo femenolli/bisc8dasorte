@@ -1,0 +1,5 @@
+<% @frase.each do |frase| %>
+  <%= frase.mensagem %>
+  <%= link_to "Alterar", edit_frase_path(frase) %>
+  <%= link_to "Remover", frase, method: :delete, remote: true%>
+<% end %>

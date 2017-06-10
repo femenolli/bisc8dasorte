@@ -1,0 +1,12 @@
+<%= form_for @frase do |f| %>
+
+  <div class="form-group">
+    <%= f.label :mensagem %>
+    <%= f.text_field :mensagem, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit %>
+  </div>
+
+<% end %>
