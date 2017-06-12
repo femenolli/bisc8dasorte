@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
 
-  root "index#index"
+  root 'welcomes#index'
   resources :frases
-  # get "/frases/new" => "frases#new"
+
+  resource :welcome, only: [:index] do
+    get :atualizar
+  end
 
 end

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>oi</title>
+</head>
+<body>
+
+<h1>teste</h1>
+
+<div id="mensagem">
+  <%= @frase.mensagem %>
+</div>
+
+
+<%= link_to 'Nova Mensagem', new_frase_path %>
+<%= link_to 'Atualizar', atualizar_welcome_path, remote: true %>
+
+
+
+</body>
+</html>
